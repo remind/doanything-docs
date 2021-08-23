@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-20T03:09:27.880Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="BRMJzRb0elp0UucSqui0" version="14.9.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-23T11:20:47.604Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="839jDjdG7ii36RojO8Cs" version="14.9.8" type="github">
   <diagram id="mCUJHjiyGCLOeN5kABfm" name="Page-1">
     <mxGraphModel dx="1298" dy="2035" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -611,26 +611,26 @@
         <mxCell id="BamsP_97NYOLKTMDXpIl-243" value="更新时间" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="BamsP_97NYOLKTMDXpIl-233" vertex="1">
           <mxGeometry y="130" width="240" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-5" value="Account（账户）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="910" y="-450" width="330" height="270" as="geometry" />
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-5" value="OuterAccount（外部账户）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2260" y="-220" width="330" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-6" value="+accountNo:账户号&#xa;+accountName:账户名称&#xa;+accountTitle:科目&#xa;+balanceDirectionEnum:余额方向&#xa;+currency:币种&#xa;+frozenStatus:冻结状态（正常、止入、止出、双向冻结）&#xa;+attributeEnum:账户属性（公、私、内部）&#xa;+accountBalanceMap:余额&#xa;-debitBalance:借记账户余额&#xa;-creditBalance:贷记账户余额&#xa;-frozenBalance:冻结账户余额&#xa;-unfrozenBalance:解冻账户余额&#xa;-frozen:冻结账户&#xa;-frozenDebit:冻结借方&#xa;-frozenCredit:冻结贷方&#xa;-unfrozen:解冻" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-5">
-          <mxGeometry y="30" width="330" height="240" as="geometry" />
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-6" value="+frozenStatusEnum:冻结状态&#xa;+accountBalanceMap:余额&#xa;-debitBalance:借记账户余额&#xa;-creditBalance:贷记账户余额&#xa;-frozenBalance:冻结账户余额&#xa;-unfrozenBalance:解冻账户余额&#xa;-frozen:冻结账户&#xa;-frozenDebit:冻结借方&#xa;-frozenCredit:冻结贷方&#xa;-unfrozen:解冻" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-5">
+          <mxGeometry y="30" width="330" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-11" value="AccountBalance（账户余额）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="1370" y="-450" width="230" height="120" as="geometry" />
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-11" value="OuterSubAccount（外部子账户）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2260" y="50" width="230" height="120" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-12" value="+accountNo:账户号&#xa;+fundTypeEnum:资金类型&#xa;+amount:金额&#xa;-add:加金额&#xa;-subtract:减金额" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-11">
           <mxGeometry y="30" width="230" height="90" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-13" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-6" target="XNVPmnyEU-mS6Xfqk4zj-11">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="1430" y="-130" as="sourcePoint" />
-            <mxPoint x="1530" y="-230" as="targetPoint" />
+            <mxPoint x="2780" y="-120" as="sourcePoint" />
+            <mxPoint x="2880" y="-220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-14" value="BalanceDirectionEnum（余额方向）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="480" y="-450" width="270" height="86" as="geometry" />
+          <mxGeometry x="1830" y="-440" width="270" height="86" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-15" value="DEBIT:借方" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-14">
           <mxGeometry y="26" width="270" height="30" as="geometry" />
@@ -639,7 +639,7 @@
           <mxGeometry y="56" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-18" value="FrozenStatusEnum（冻结状态）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="480" y="-320" width="270" height="146" as="geometry" />
+          <mxGeometry x="1830" y="-310" width="270" height="146" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-19" value="UNFROZEN:未冻结" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-18">
           <mxGeometry y="26" width="270" height="30" as="geometry" />
@@ -654,7 +654,7 @@
           <mxGeometry y="116" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-23" value="AccountAttributeEnum（账户属性）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="480" y="-140" width="270" height="116" as="geometry" />
+          <mxGeometry x="1830" y="-130" width="270" height="116" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-24" value="ENTERPRISE:对公" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-23">
           <mxGeometry y="26" width="270" height="30" as="geometry" />
@@ -665,38 +665,38 @@
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-26" value="INNER:内部户" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-23">
           <mxGeometry y="86" width="270" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-28" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-14" target="XNVPmnyEU-mS6Xfqk4zj-6">
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-28" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-14" target="XNVPmnyEU-mS6Xfqk4zj-45">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="830" y="-80" as="sourcePoint" />
-            <mxPoint x="930" y="-180" as="targetPoint" />
+            <mxPoint x="2180" y="-70" as="sourcePoint" />
+            <mxPoint x="2280" y="-170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-29" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-18" target="XNVPmnyEU-mS6Xfqk4zj-6">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="760" y="-397" as="sourcePoint" />
-            <mxPoint x="920" y="-310" as="targetPoint" />
+            <mxPoint x="2110" y="-387" as="sourcePoint" />
+            <mxPoint x="2270" y="-300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-30" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-23" target="XNVPmnyEU-mS6Xfqk4zj-6">
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-30" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-23" target="XNVPmnyEU-mS6Xfqk4zj-45">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="760" y="-237" as="sourcePoint" />
             <mxPoint x="920" y="-310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-31" value="AccountTitle（账户科目）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="910" y="-690" width="270" height="170" as="geometry" />
+          <mxGeometry x="2380" y="-704" width="330" height="184" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-32" value="+code:科目代码&#xa;+name:科目名称&#xa;+level:科目级别&#xa;+parentCode:父科目代码&#xa;+isLeaf:是否叶子节点&#xa;+accountElementsEnum:会计要素&#xa;+balanceDirectionEnum:余额方向&#xa;+isEnable:是否可用&#xa;+memo:备注" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-31">
-          <mxGeometry y="30" width="270" height="140" as="geometry" />
+          <mxGeometry y="30" width="330" height="154" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-33" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-14" target="XNVPmnyEU-mS6Xfqk4zj-31">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="1060" y="-280" as="sourcePoint" />
-            <mxPoint x="1160" y="-380" as="targetPoint" />
+            <mxPoint x="2410" y="-270" as="sourcePoint" />
+            <mxPoint x="2510" y="-370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-34" value="AccountElementsEnum（会计要素）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="480" y="-690" width="270" height="146" as="geometry" />
+          <mxGeometry x="1830" y="-680" width="270" height="146" as="geometry" />
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-35" value="ASSETS:资产类" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-34">
           <mxGeometry y="26" width="270" height="30" as="geometry" />
@@ -712,14 +712,53 @@
         </mxCell>
         <mxCell id="XNVPmnyEU-mS6Xfqk4zj-39" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-34" target="XNVPmnyEU-mS6Xfqk4zj-31">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="760" y="-397" as="sourcePoint" />
-            <mxPoint x="920" y="-595" as="targetPoint" />
+            <mxPoint x="2110" y="-387" as="sourcePoint" />
+            <mxPoint x="2270" y="-585" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-5" target="XNVPmnyEU-mS6Xfqk4zj-31">
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-44" target="XNVPmnyEU-mS6Xfqk4zj-31">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="760" y="-397" as="sourcePoint" />
-            <mxPoint x="920" y="-595" as="targetPoint" />
+            <mxPoint x="2110" y="-387" as="sourcePoint" />
+            <mxPoint x="2270" y="-585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-42" value="InnerAccount（内部账户）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2620" y="-220" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-43" value="+balance:余额&#xa;-debitBalance:借记账户余额&#xa;-creditBalance:贷记账户余额" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-42">
+          <mxGeometry y="30" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-44" value="Account（账户）" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="-480" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-45" value="+accountNo:账户号&#xa;+accountName:账户名称&#xa;+accountTitle:科目&#xa;+currency:币种&#xa;+balanceDirectionEnum:余额方向&#xa;+attributeEnum:账户属性&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-44">
+          <mxGeometry y="30" width="330" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-46" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-5" target="XNVPmnyEU-mS6Xfqk4zj-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2250" y="-280" as="sourcePoint" />
+            <mxPoint x="2300" y="-330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-47" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-42" target="XNVPmnyEU-mS6Xfqk4zj-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2405" y="-210" as="sourcePoint" />
+            <mxPoint x="2405" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-48" value="FundTypeEnum（资金类型）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="80" width="270" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-49" value="DEBIT:借记资金" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-48">
+          <mxGeometry y="26" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-50" value="FROZEN:冻结资金" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="XNVPmnyEU-mS6Xfqk4zj-48">
+          <mxGeometry y="56" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XNVPmnyEU-mS6Xfqk4zj-52" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;" edge="1" parent="1" source="XNVPmnyEU-mS6Xfqk4zj-49" target="XNVPmnyEU-mS6Xfqk4zj-12">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="2110" y="-62" as="sourcePoint" />
+            <mxPoint x="2390" y="-385" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
