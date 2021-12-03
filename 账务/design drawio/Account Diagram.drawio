@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T03:14:56.561Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="WnJD0QqN2jy8uyVFJawg" version="15.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-03T10:30:06.341Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36" etag="RPJpBNlKNSajijHof7VJ" version="15.8.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1298" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -233,6 +233,21 @@
         </mxCell>
         <mxCell id="7Vs7owEC3NM674qJ7YM_-23" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="530" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="7Vs7owEC3NM674qJ7YM_-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="7Vs7owEC3NM674qJ7YM_-24" target="7Vs7owEC3NM674qJ7YM_-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7Vs7owEC3NM674qJ7YM_-24" value="Account" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1920" y="160" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7Vs7owEC3NM674qJ7YM_-25" value="+accountNo : 账户号&#xa;+accountName : 账户名&#xa;+accountTitle : 科目号&#xa;+curreny : 币种&#xa;+balanceDirection : 余额方向&#xa;-getAccountFamily : 获取账户分类" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;dashed=1;" vertex="1" parent="7Vs7owEC3NM674qJ7YM_-24">
+          <mxGeometry y="30" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7Vs7owEC3NM674qJ7YM_-37" value="OuterAccount" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1940" y="395" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="7Vs7owEC3NM674qJ7YM_-38" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;dashed=1;" vertex="1" parent="7Vs7owEC3NM674qJ7YM_-37">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
